@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-primary: #111827;
+        --bg-secondary: rgba(0,0,0,0.3);
+        --bg-tertiary: rgba(255,255,255,0.05);
+        --text-primary: #FFFFFF;
+        --text-secondary: #D1D5DB;
+        --border-primary: rgba(255,255,255,0.1);
+        --color-primary: #a855f7;
+        --color-primary-hover: #9333ea;
+        --color-primary-shadow: rgba(168, 85, 247, 0.5);
+        --color-accent: #3b82f6;
+        --color-accent-hover: #2563eb;
+        --color-accent-shadow: rgba(59, 130, 246, 0.5);
+        --color-success: #22c55e;
+        --color-error: #ef4444;
+        --font-body: 'Roboto', sans-serif;
+        --font-display: 'Orbitron', sans-serif;
+      }
+      .theme-nova {
+        --bg-primary: #111827;
+        --bg-secondary: rgba(0,0,0,0.3);
+        --color-primary: #a855f7;
+        --color-primary-hover: #9333ea;
+        --color-primary-shadow: rgba(168, 85, 247, 0.5);
+        --color-accent: #3b82f6;
+        --color-accent-hover: #2563eb;
+      }
+      .theme-cyber {
+        --bg-primary: #0a180f;
+        --bg-secondary: rgba(0, 20, 5, 0.3);
+        --border-primary: rgba(52, 211, 153, 0.2);
+        --color-primary: #34d399;
+        --color-primary-hover: #10b981;
+        --color-primary-shadow: rgba(52, 211, 153, 0.5);
+        --color-accent: #a7f3d0;
+        --color-accent-hover: #6ee7b7;
+        --text-primary: #e5e7eb;
+      }
+      .theme-solar {
+        --bg-primary: #29110c;
+        --bg-secondary: rgba(40, 5, 0, 0.3);
+        --border-primary: rgba(251, 146, 60, 0.2);
+        --color-primary: #fb923c;
+        --color-primary-hover: #f97316;
+        --color-primary-shadow: rgba(251, 146, 60, 0.5);
+        --color-accent: #ef4444;
+        --color-accent-hover: #dc2626;
+        --text-primary: #fde68a;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+      }
+      .font-orbitron {
+        font-family: var(--font-display);
+      }
+      ::selection {
+        background-color: var(--color-primary);
+        color: white;
+      }
+
+      /* Tailwind-like classes using CSS variables */
+      .bg-primary { background-color: var(--color-primary); }
+      .hover\\:bg-primary-hover:hover { background-color: var(--color-primary-hover); }
+      .bg-primary--500\\/50 { background-color: color-mix(in srgb, var(--color-primary) 50%, transparent); }
+      .hover\\:bg-primary-500\\/70:hover { background-color: color-mix(in srgb, var(--color-primary) 70%, transparent); }
+      .shadow-primary { box-shadow: 0 0 15px var(--color-primary-shadow); }
+      .hover\\:shadow-primary:hover { box-shadow: 0 0 15px var(--color-primary-shadow); }
+      .border-primary { border-color: var(--color-primary); }
+
+      .text-primary { color: var(--color-primary); }
+      .text-accent { color: var(--color-accent); }
+      
+      .bg-background-primary { background-color: var(--bg-primary); }
+      .bg-background-secondary { background-color: var(--bg-secondary); }
+      .border-theme-primary { border-color: var(--border-primary); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "zustand": "https://aistudiocdn.com/zustand@^4.5.4",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.2",
+    "three": "https://aistudiocdn.com/three@^0.166.1",
+    "@react-three/fiber": "https://aistudiocdn.com/react-three-fiber@^8.16.8",
+    "@react-three/drei": "https://aistudiocdn.com/react-three-drei@^9.108.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
